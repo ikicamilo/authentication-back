@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: ["https://auth-front-tx1t.onrender.com"],
+    origin: [`${proccess.env.URL_FRONT}`],
     credentials: true,
   })
 );
